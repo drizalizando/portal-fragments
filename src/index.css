@@ -2,41 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Mystical Portal Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cosmic Background Palette */
+    --background: 258 100% 3%;
+    --foreground: 300 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card & Surface Colors */
+    --card: 258 50% 8%;
+    --card-foreground: 300 15% 90%;
+    --card-glow: 258 70% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Portal Elements */
+    --portal-primary: 270 100% 50%;
+    --portal-secondary: 320 100% 50%;
+    --portal-accent: 45 100% 60%;
+    --portal-emerald: 150 80% 50%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cosmic Gradients */
+    --cosmic-primary: linear-gradient(135deg, hsl(258 100% 15%), hsl(270 100% 8%));
+    --cosmic-portal: linear-gradient(135deg, hsl(270 100% 50%), hsl(320 100% 50%));
+    --cosmic-mystical: linear-gradient(45deg, hsl(270 100% 30%), hsl(320 80% 40%), hsl(45 100% 50%));
+    --cosmic-background: radial-gradient(ellipse at center, hsl(258 70% 8%), hsl(258 100% 3%));
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Sacred Geometry */
+    --sigil-glow: 0 0 20px hsl(270 100% 50% / 0.5);
+    --rune-pulse: 0 0 30px hsl(320 100% 50% / 0.6);
+    --fragment-shine: 0 0 15px hsl(45 100% 60% / 0.8);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Interactive States */
+    --choice-hover: 258 60% 12%;
+    --choice-active: 270 80% 25%;
+    --portal-ring: 320 100% 50% / 0.3;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Typography Mystical */
+    --text-mystical: 300 20% 95%;
+    --text-ethereal: 270 30% 80%;
+    --text-whisper: 280 20% 70%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    /* Legacy Shadcn Compatibility */
+    --primary: 270 100% 50%;
+    --primary-foreground: 300 20% 95%;
+    --secondary: 258 50% 15%;
+    --secondary-foreground: 300 15% 90%;
+    --accent: 320 100% 50%;
+    --accent-foreground: 300 20% 95%;
+    --muted: 258 30% 20%;
+    --muted-foreground: 280 20% 70%;
+    --border: 258 40% 20%;
+    --input: 258 40% 15%;
+    --ring: 270 100% 50%;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
